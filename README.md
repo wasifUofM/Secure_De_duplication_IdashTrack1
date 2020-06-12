@@ -20,5 +20,5 @@ Our scheme operates based on the mechanism of blind signature. At first Center1(
 with public key(e) and multiply with its random number(rs) and forwards to other centers. The other centers signs the records with their private key)(d) and returns the records to Server1. 
 Server1 divides the signed records with the random number(rs) and forwards the records other servers (s2,s3,.....). The centers sign their records with private key(d) after multplication with random number (rc), 
 and generates bloom filters. In our schemes the center holds  pre-generated signed bloom filters. The signed bloom filters are passed to other servers (s2,s3,.....) for matching.
- The servers matches the bloom filter recieved from centers with the generated bloom filter with the rcived records from Server1. 
+ The servers matches the bloom filter recieved from centers with the generated bloom filter with the recieved records from Server1. 
  The servers passes the duplication result to the Center1(input center) who intiated de-duplication with input files. The client filter the results recived from servers and get the final result.
